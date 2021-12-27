@@ -1,9 +1,5 @@
 
 package textile;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
    
 public class Product {
    int Id;
@@ -24,7 +20,7 @@ public class Product {
        System.out.println("Product Name: "+Name);
        System.out.println("Product Category: "+Category);
        System.out.println("Product Price: $"+ Double.toString(Price));
-       System.out.println("Product Stock"+ Integer.toString(Stock)+"pcs");
+       System.out.println("Product Stock: "+ Integer.toString(Stock)+"pcs");
        
        
    }
