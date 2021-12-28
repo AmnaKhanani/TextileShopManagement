@@ -28,7 +28,7 @@ class Goldinvoice{
 }
   public String setcreditCardNo(String c){
       creditCardNo = c;
-      return "";
+      return c;
   }
   
     

@@ -9,13 +9,25 @@ public class Silverinvoice {
     double amount;
     SilverCustomer customer;
     Product product;
+    private String creditCardNo;
  
     List<lineItem> items;
  
 
- Silverinvoice() {
+    Silverinvoice() {
     
-     this.items = new ArrayList<>();       
+        this.items = new ArrayList<>();       
 
     
-}}
+}
+    public String getcreditCardNo(){
+        return creditCardNo;
+ 
+    }
+
+    public String setcreditCardNo(String c){
+        creditCardNo = c;
+        return c;
+    }
+}
+

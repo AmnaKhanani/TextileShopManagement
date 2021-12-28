@@ -96,8 +96,7 @@ public class Main  {
         lb08.setText("Discount:     "+g);
         lb08.setBounds(10,140,400,360);
         jf.add(lb08);
-        
-        
+       
         
         JLabel lb9 = new JLabel();
         lb9.setText("-----------------------------------------------------------------");
@@ -161,7 +160,7 @@ public class Main  {
         jf1.add(lbf);
         
         JLabel lbo = new JLabel();
-        lbo.setText("Customer Id:    "+invgold.customer.Id);
+        lbo.setText("Customer Id:    "+invsilver.customer.Id);
         lbo.setBounds(10,60,400,240);
         jf1.add(lbo);
         
@@ -225,7 +224,7 @@ public class Main  {
         List<lineItem> items2 =new ArrayList<>();
         items2.add(new lineItem(5, 6, 91, 160));
         invplatinum.items = items2;
-        double p = invplatinum.customer.issueDiscount(items1.get(0).amount);
+        double p = invplatinum.customer.issueDiscount(items2.get(0).amount);
         
         
         JLabel lb11 = new JLabel();
@@ -261,7 +260,7 @@ public class Main  {
         jf2.add(lb66);
         
         JLabel lbp = new JLabel();
-        lbp.setText("Customer Id:    "+invgold.customer.Id);
+        lbp.setText("Customer Id:    "+invplatinum.customer.Id);
         lbp.setBounds(10,60,400,240);
         jf2.add(lbp);
         
@@ -295,7 +294,7 @@ public class Main  {
         jf2.add(lb34);
         
         JLabel lb35 = new JLabel();
-        lb35.setText("Discount:     "+s);
+        lb35.setText("Discount:     "+p);
         lb35.setBounds(10,140,400,360);
         jf2.add(lb35);
         
