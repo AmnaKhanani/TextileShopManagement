@@ -13,16 +13,21 @@ public class Main  {
     
    
     public static void main(String[]args){
+        //object of jframe class
         JFrame jf = new JFrame("INVOICE");
         
+        //object of goldinvoice class
         Goldinvoice invgold = new Goldinvoice();
+        
         invgold.customer = new GoldCustomer(55,"Ali","0300-3269872",45);
         invgold.product = new Product(83,"Pents","Kids Pents",200.0,50);
+        //object of date class
         invgold.date = new Date();
         invgold.invoiceNo = 1;
         List<lineItem> items =new ArrayList<>();
         items.add(new lineItem(1, 10, 31, 100));
         invgold.items = items;
+        //accessing amount through list of index
         double g = invgold.customer.issueDiscount(items.get(0).amount);
         String a = invgold.setcreditCardNo("548-985");
         

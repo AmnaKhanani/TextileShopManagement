@@ -1,11 +1,11 @@
 package textile;
-
+//interface
 interface ICustomer{
     
      double issueDiscount(double amount);
  }
 
-
+//implemetation of the ICustomer interface
 class GoldCustomer implements ICustomer{
     int Id;
     String Name;
@@ -23,7 +23,7 @@ class GoldCustomer implements ICustomer{
         return amount*.20;
     }   
 }
-
+//implemetation of the ICustomer interface
 class SilverCustomer implements ICustomer{
     int Id;
     String Name;
@@ -41,7 +41,7 @@ class SilverCustomer implements ICustomer{
         return amount*.15;
     }   
 }
-
+//implemetation of the ICustomer interface
 class PlatinumCustomer implements ICustomer{
     int Id;
     String Name;

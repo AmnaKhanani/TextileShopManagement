@@ -1,7 +1,7 @@
 
 package textile;
 import java.io.*;
-   
+//class of products details  
 public class Product {
    int Id;
    String Name;
@@ -15,9 +15,12 @@ public class Product {
        this.Category=category;
        this.Price=price;
        this.Stock=stock;
-   }  
+   }
+   //print function to print on the console as well as write in file
    void print(){
+       //exception handling
        try{
+           //writing in file
            FileOutputStream fos = new FileOutputStream("project.txt");
            DataOutputStream dos = new DataOutputStream(fos);
             dos.writeUTF("Product ID: "+ Integer.toString(Id));
